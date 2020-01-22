@@ -8,6 +8,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
+      - name: smb
+        run: cd distorm && git submodule init && git submodule update&& cd ..
       - name: configure
         run: mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles"  ..
       - name: build
