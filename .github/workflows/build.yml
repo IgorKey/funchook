@@ -13,7 +13,7 @@ jobs:
       - name: configure
         run: mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles"  ..
       - name: build
-        run: cmake --build . --target install -- -j 2
+        run: cmake --build . --target install
 #      - name: test
 #        run: cd build && ctest
 
