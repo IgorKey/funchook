@@ -9,11 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: configure
-        run: cmake "/home/runner/work/funchook/funchook"
-      - name: build
-        run: cmake --build cmake-build-debug --target install -- -j 2
-      - name: test
-        run: cd build && ctest
+        run: cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles"  /home/runner/work/funchook/funchook
+#      - name: build
+#        run: cmake --build cmake-build-debug --target install -- -j 2
+#      - name: test
+#        run: cd build && ctest
 
 #  build-windows:
 #
