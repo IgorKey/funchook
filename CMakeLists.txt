@@ -24,7 +24,7 @@ check_c_compiler_flag(-fvisibility=hidden HAVE_FVISIBILITY_HIDDEN)
 # distorm
 #
 
-set(DISTORM_PATH distorm/)
+set(DISTORM_PATH ./distorm/)
 set(DISTORM_SRC_DIR ${DISTORM_PATH}/src/)
 set(DISTORM_SOURCES ${DISTORM_SRC_DIR}/decoder.c ${DISTORM_SRC_DIR}/distorm.c ${DISTORM_SRC_DIR}/instructions.c
     ${DISTORM_SRC_DIR}/insts.c ${DISTORM_SRC_DIR}/mnemonics.c ${DISTORM_SRC_DIR}/operands.c
